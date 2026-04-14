@@ -1,0 +1,146 @@
+.game-hero {
+  background:
+    radial-gradient(circle at top right, rgba(107, 167, 214, 0.22), transparent 32%),
+    linear-gradient(180deg, #f8fbfe, #edf4fa);
+}
+
+.game-page {
+  position: relative;
+  overflow: hidden;
+}
+
+.game-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(180deg, rgba(247, 251, 254, 0.94), rgba(237, 244, 250, 0.95)),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20250828/pngtree-assortment-of-sports-balls-on-grass-with-stadium-lights-image_17874145.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.game-page .container {
+  position: relative;
+  z-index: 1;
+}
+
+.game-sidebar {
+  padding: 1.5rem;
+  position: sticky;
+  top: 6.5rem;
+}
+
+.score-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.score-panel > div {
+  background: #f4f8fb;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.score-title {
+  display: block;
+  color: #667085;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.score-panel strong {
+  font-size: 1.65rem;
+  color: #2c5d83;
+}
+
+.game-shell {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.game-shell h2 {
+  font-weight: 800;
+  margin: 1rem 0 1.5rem;
+}
+
+.answer-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.answer-btn {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(44, 93, 131, 0.14);
+  background: #f8fbfe;
+  font-weight: 600;
+  color: #1f2933;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.answer-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(25, 47, 63, 0.09);
+  border-color: #6ba7d6;
+}
+
+.answer-btn.correct {
+  background: #e5f5ea;
+  border-color: #2f8a57;
+  color: #1e5a39;
+}
+
+.answer-btn.incorrect {
+  background: #fdeeee;
+  border-color: #cb4f4f;
+  color: #8a2525;
+}
+
+.answer-btn:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.feedback-box {
+  margin-top: 1.4rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  background: #eef5fb;
+  color: #355b77;
+  font-weight: 600;
+}
+
+.feedback-box.success {
+  background: #e5f5ea;
+  color: #1f6b43;
+}
+
+.feedback-box.error {
+  background: #fdeeee;
+  color: #8a2525;
+}
+
+.game-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.game-sidebar {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 991.98px) {
+  .game-sidebar {
+    position: static;
+  }
+}

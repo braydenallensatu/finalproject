@@ -1,0 +1,508 @@
+:root {
+  --primary: #6ba7d6;
+  --primary-dark: #2c5d83;
+  --primary-soft: #eaf4fb;
+  --ink: #1f2933;
+  --muted: #667085;
+  --line: rgba(44, 93, 131, 0.12);
+  --card: #ffffff;
+  --panel: #f5f8fb;
+  --shadow: 0 18px 40px rgba(29, 49, 66, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+.site-navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 24px rgba(22, 35, 49, 0.08);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--ink) !important;
+}
+
+.nav-link {
+  font-weight: 600;
+  margin-left: 0.65rem;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--primary-dark) !important;
+}
+
+.hero-section {
+  min-height: 100vh;
+  padding: 8rem 0 4rem;
+  position: relative;
+  color: #ffffff;
+  background-image:
+    linear-gradient(120deg, rgba(13, 28, 41, 0.72), rgba(30, 67, 98, 0.36)),
+    url("https://c4.wallpaperflare.com/wallpaper/262/64/34/sky-mount-bromo-bromo-tengger-semeru-national-park-indonesia-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section-byu {
+  background-image:
+    linear-gradient(120deg, rgba(10, 24, 39, 0.82), rgba(33, 72, 105, 0.48)),
+    url("https://marriott.byu.edu/graduation/wp-content/uploads/sites/59/grad1-960x405.jpg");
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top center, rgba(255, 255, 255, 0.1), transparent 32%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+}
+
+.eyebrow,
+.section-kicker,
+.callout-label,
+.sidebar-label {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #d7ebfb;
+}
+
+.hero-copy,
+.section-copy {
+  max-width: 700px;
+}
+
+.hero-copy {
+  margin-inline: auto;
+}
+
+.section-pad {
+  padding: 5.25rem 0;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.muted-copy,
+.text-muted {
+  color: var(--muted) !important;
+}
+
+.light-panel {
+  background: linear-gradient(180deg, #f7fbfe, #eef5fb);
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow);
+}
+
+.headshot-placeholder,
+.headshot-portrait,
+.resume-headshot {
+  width: min(300px, 100%);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 1.5rem;
+  border: 6px solid #ffffff;
+}
+
+.hero-headshot {
+  width: min(220px, 48vw);
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
+  object-position: center 16%;
+  border-radius: 1.6rem;
+  border: 5px solid rgba(255, 255, 255, 0.94);
+  margin: 0 auto 1.5rem;
+}
+
+.feature-card,
+.callout-panel,
+.resume-card,
+.game-sidebar,
+.game-shell,
+.mini-highlight,
+.resume-hero-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.feature-card {
+  padding: 1.75rem;
+}
+
+.feature-card h3,
+.mini-highlight h3,
+.resume-card h3,
+.language-item h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.feature-card p,
+.mini-highlight p,
+.callout-panel p,
+.resume-card p,
+.resume-list li,
+.language-item p {
+  color: var(--muted);
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.feature-link {
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mini-highlight {
+  padding: 1.2rem 1.1rem;
+  height: 100%;
+}
+
+.callout-panel {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(180deg, #ffffff, #f4f9fd);
+}
+
+.section-header-tight {
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+.btn-primary {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #1e4868;
+  border-color: #1e4868;
+}
+
+.btn-outline-primary {
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.site-footer {
+  background: #17232f;
+  color: rgba(255, 255, 255, 0.84);
+  padding: 1.4rem 0;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1.15rem;
+  margin-left: 1rem;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+}
+
+.inner-page-body {
+  background: var(--panel);
+}
+
+.inner-hero {
+  padding: 8rem 0 3.5rem;
+  background:
+    radial-gradient(circle at top left, rgba(107, 167, 214, 0.22), transparent 34%),
+    linear-gradient(180deg, #f7fbfe, #edf5fb);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-banner {
+  background-image:
+    linear-gradient(120deg, rgba(10, 24, 39, 0.72), rgba(33, 72, 105, 0.42)),
+    url("https://marriott.byu.edu/graduation/wp-content/uploads/sites/59/grad1-960x405.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 0;
+}
+
+.resume-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(8, 16, 24, 0.12));
+}
+
+.resume-main,
+.game-page {
+  padding: 3rem 0 5rem;
+}
+
+.resume-hero-card {
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.resume-subtitle {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.resume-summary {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.resume-contact-card {
+  background: #f5f9fc;
+  border: 1px solid var(--line);
+  border-radius: 1.2rem;
+  padding: 1.2rem 1.25rem;
+  height: 100%;
+}
+
+.resume-contact-card p {
+  margin-bottom: 0.55rem;
+  color: var(--ink);
+}
+
+.resume-contact-card a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-label {
+  margin-bottom: 0.2rem;
+  color: var(--muted) !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.resume-block + .resume-block {
+  margin-top: 2rem;
+}
+
+.resume-heading {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.resume-heading h2 {
+  margin-bottom: 0;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.resume-chip,
+.category-pill {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.resume-card {
+  padding: 1.4rem 1.5rem;
+}
+
+.resume-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.resume-entry + .resume-entry {
+  margin-top: 1.25rem;
+}
+
+.resume-entry-divider {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.resume-entry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.resume-date {
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.resume-role,
+.resume-detail {
+  color: var(--muted);
+}
+
+.resume-list {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-badge {
+  display: inline-flex;
+  padding: 0.65rem 0.95rem;
+  border-radius: 999px;
+  background: #f2f7fb;
+  border: 1px solid var(--line);
+  font-weight: 600;
+}
+
+.language-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.language-item:last-child {
+  border-bottom: 0;
+}
+
+.language-name {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.language-level {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.contact-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1rem;
+  background: #f7fbfe;
+  border: 1px solid var(--line);
+  color: var(--primary-dark);
+  text-decoration: none;
+  min-width: 0;
+}
+
+.contact-item-label {
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.contact-item-value {
+  color: var(--muted);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.contact-strip i {
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 7rem;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+
+  .resume-entry-top {
+    flex-direction: column;
+  }
+
+  .contact-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-pad {
+    padding: 4.25rem 0;
+  }
+
+  .feature-card,
+  .resume-card,
+  .resume-hero-card {
+    padding: 1.35rem;
+  }
+
+  .language-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

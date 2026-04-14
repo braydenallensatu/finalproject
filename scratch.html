@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies | Brayden Allen</title>
+  <meta name="description" content="Custom sports and hobbies page for Brayden Allen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/scratch.css">
+</head>
+<body>
+  <a id="top"></a>
+
+  <div class="scratch-topbar">
+    <div class="topbar-inner">
+      <div class="brand-block">
+        <p class="site-name">Brayden Allen</p>
+        <p class="site-tag">Sports &amp; Hobbies</p>
+      </div>
+      <div class="top-links">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="piano-tuning/index.html">Piano Tuning</a>
+        <a href="scratch.html">Hobbies</a>
+        <a href="game.html">Game</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scratch">
+    <div class="hero-copy-box">
+      <p class="small-label">Hobbies</p>
+      <h1>My Favorite Hobbies</h1>
+      <p>I like staying active and competitive, and these are the sports I enjoy most. Scroll down to see how I would rank my favorite hobbies from 1 to 5.</p>
+      <div class="button-row">
+        <a class="solid-btn" href="#tableau-section">See Golf Stats</a>
+        <a class="outline-btn" href="#video-section">Watch Highlights</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrap">
+    <div class="section-box">
+      <h2>Featured Sports</h2>
+      <p class="intro-copy">My favorite hobbies in order: golf, tennis, skiing, pickleball, and basketball.</p>
+      <div class="sports-grid">
+        <div class="sport-card" id="golf">
+          <div class="sport-rank">1</div>
+          <img src="https://www.pebblebeach.com/content/uploads/20160811-cam-timeout.jpg" alt="Golf course view at Pebble Beach">
+          <div class="sport-card-body">
+            <h3>Golf</h3>
+            <p>Golf brings together strategy, patience, and competition in a way I never get tired of.</p>
+          </div>
+        </div>
+        <div class="sport-card" id="tennis">
+          <div class="sport-rank">2</div>
+          <img src="https://thumbs.dreamstime.com/b/wimbledon-2012-men-s-semi-final-25678921.jpg" alt="Tennis match action at Wimbledon">
+          <div class="sport-card-body">
+            <h3>Tennis</h3>
+            <p>Tennis is one of my favorites because every point demands movement, timing, and focus.</p>
+          </div>
+        </div>
+        <div class="sport-card" id="skiing">
+          <div class="sport-rank">3</div>
+          <img src="https://www.altachalets.com/wp-content/uploads/2022/09/skiing-with-a-view-min.jpg" alt="Skiing in the mountains">
+          <div class="sport-card-body">
+            <h3>Skiing</h3>
+            <p>Skiing combines speed, mountain views, and the kind of challenge that makes winter exciting.</p>
+          </div>
+        </div>
+        <div class="sport-card" id="pickleball">
+          <div class="sport-rank">4</div>
+          <img src="https://cdn.greaterzion.com/wp-content/uploads/2019/03/01120043/Little-Valley-Pickleball-Complex.jpg" alt="Pickleball courts">
+          <div class="sport-card-body">
+            <h3>Pickleball</h3>
+            <p>Pickleball is fast, energetic, and one of the easiest sports to jump into with friends.</p>
+          </div>
+        </div>
+        <div class="sport-card" id="basketball">
+          <div class="sport-rank">5</div>
+          <img src="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/HU5GRI2AXKTEPTD3EASBJJOHJ4.jpg?auth=13bba8e43c7bb7daf2ab7564794a3669d49ccc98485a3bc3722a58b0a6d93cb1&width=1440" alt="Boston Celtics game action">
+          <div class="sport-card-body">
+            <h3>Basketball</h3>
+            <p>Basketball rounds out the list, and one of my favorite NBA teams to watch is the Boston Celtics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-box" id="tableau-section">
+      <h2>Interactive PGA Tour Stats Dashboard</h2>
+      <p class="short-copy">This PGA Tour dashboard covers the years when I was watching peak golf and really fell in love with the game.</p>
+      <div class="tableau-shell">
+        <tableau-viz
+          id="tableauViz"
+          src="https://public.tableau.com/views/PGATourStats2007-2022/PGAPlayerStatsDashboard?:showVizHome=no"
+          toolbar="bottom"
+          hide-tabs
+          width="100%"
+          height="780">
+        </tableau-viz>
+      </div>
+      <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    </div>
+
+    <div class="section-box alt-box" id="video-section">
+      <h2>Carlos Alcaraz Highlights</h2>
+      <p class="short-copy">Highlights from one of my favorite current tennis players to watch.</p>
+      <div class="video-shell">
+        <iframe
+          src="https://www.youtube.com/embed/w-O6ADKVlRM"
+          title="Carlos Alcaraz highlights"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="short-copy">If the video does not load in your browser, <a href="https://www.youtube.com/watch?v=w-O6ADKVlRM" target="_blank" rel="noopener noreferrer">watch it directly on YouTube</a>.</p>
+    </div>
+
+    <div class="bottom-links">
+      <a href="index.html">Back to Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="game.html">Sports Trivia Game</a>
+      <a href="#top">Back to Top</a>
+    </div>
+  </div>
+</body>
+</html>
